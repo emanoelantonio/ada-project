@@ -2,13 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: "Montserrat", sans-serif;
 }
-
-/* body {
-    height: 100vh;
-} */
 
 .title {
     text-align: center;
@@ -17,24 +11,14 @@
     font-weight: 700;
 }
 
-#hero,
-#catalog,
-#contact,
-#address,
-#baseboard {
-    margin-top: 4rem;
+.logo {
+    width: 100px;
+    height: 50px;
 }
 
-.btn:hover {
+button[type="submit"]:hover {
     color: #fff;
     background-color: #ea1d2c;
-}
-
-/* header */
-
-.navbar-brand img {
-    height: 40px;
-    object-fit: cover;
 }
 
 /* contato */
@@ -90,7 +74,7 @@ textarea:valid {
 
     color: #fff;
 
-    position: static;
+    position: absolute;
     bottom: 0;
 }
 
@@ -111,10 +95,6 @@ section > .container {
 /* ------- media queries --------- */
 
 @media (max-width: 481px) {
-    .header-hero {
-        flex-direction: column;
-    }
-
     .form-contant {
         flex-direction: column-reverse;
     }
@@ -134,19 +114,20 @@ section > .container {
 
     #baseboard {
         font-size: 0.8rem;
+        position: initial;
     }
 }
 
 @media (min-width: 481px) and (max-width: 992px) {
-    .header-hero {
-        flex-direction: column;
-    }
-
     .form-contant {
         flex-direction: column-reverse;
     }
 
     .form-left button {
         width: 100%;
+    }
+
+    #baseboard {
+        position: initial;
     }
 }
