@@ -4,15 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <title>Ada | iFood</title>
 </head>
 
-<body>
+<body class="custom-font">
   <header>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img class="logo" src="./assets/ifood.png" alt="Logo">
@@ -37,27 +40,45 @@
       </div>
     </nav>
   </header>
-  <main class="container py-4 pt-3">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+  <main class="container py-4">
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 mt-4">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">O que você quer comer agora?</h1>
         <p class="col-md-8 fs-4">“O jeito mais fácil de pedir delivery de comida e fazer mercado. Leia avaliações de
           restaurantes, faça seu pedido pela internet e receba em casa.”</p>
-        
       </div>
       <div class="row align-items-md-stretch">
-        <div class="col-md-6">
-          <div class="h-100 p-5 text-bg-dark rounded-3">
-            <h2>Em qualquer lugar</h2>
-            <p>Não importa onde você esteja. Seja em casa ou no trabalho, na casa da sogra ou na fazenda.</p>
-            <button class="btn btn-outline-light" type="button">Example button</button>
+        <div class="col-md-4 mb-3">
+          <div class="card" style="width: 20rem;">
+            <img src="./assets/current_location.png" class="card-img-top" alt="Localização">
+            <div class="card-body">
+              <h5 class="card-title">Em qualquer lugar</h5>
+              <p class="card-text">
+                Não importa onde você está. Seja em casa ou no trabalho, na casa da sogra ou na casa de campo.</p>
+              <a href="#" class="btn btn-primary">Peça já</a>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-            <h2>O cardápio é a sua imaginação</h2>
-            <p>Um almoço, janta ou talvez aquele banquete enquanto espera o seu chefe...</p>
-            <button class="btn btn-outline-secondary" type="button">Example button</button>
+        <div class="col-md-4 mb-3">
+          <div class="card" style="width: 20rem;">
+            <img src="./assets/any-food.png" class="card-img-top" alt="Prato com comida">
+            <div class="card-body">
+              <h5 class="card-title">Qualquer tipo</h5>
+              <p class="card-text">
+                O cardápio é a sua imaginação. Café da manha, almoço ou aquele banquete na janta. Do pãozinho ao Sushi, macarronada ou crustáceo.</p>
+              <a href="#" class="btn btn-primary">Pedir agora</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card" style="width: 20rem;">
+            <img src="./assets/smartphone.png" class="card-img-top" alt="Smartphone">
+            <div class="card-body">
+              <h5 class="card-title">Portátil</h5>
+              <p class="card-text">
+                Tudo isso e muito mais na palma da sua mão. Baixe agora nosso app e mate sua fome!</p>
+              <a href="#" class="btn btn-primary">Baxar App</a>
+            </div>
           </div>
         </div>
       </div>
