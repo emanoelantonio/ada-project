@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+/* body {
+    height: 100vh;
+} */
+
+.title {
+    text-align: center;
+    color: #ea1d2c;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#hero,
+#catalog,
+#contact,
+#address,
+#baseboard {
+    margin-top: 4rem;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #ea1d2c;
+}
+
+/* header */
+
+.navbar-brand img {
+    height: 40px;
+    object-fit: cover;
+}
+
+/* contato */
+
+h3 {
+    text-align: center;
+}
+
+.form-contant {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    padding: 1rem;
+}
+
+.form-left {
+    flex: 2;
+}
+
+.form-right img {
+    height: 400px;
+    object-fit: cover;
+}
+
+select:valid {
+    border-color: green;
+}
+
+input:valid {
+    border-color: green;
+}
+
+textarea:valid {
+    border-color: green;
+}
+
+/* footer */
+
+#baseboard {
+    width: 100%;
+    height: 100px;
+    background-color: #ea1d2c;
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+
+    position: absolute;
+    bottom: 0;
+}
+
+#baseboard a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#baseboard a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* ------- media queries --------- */
+
+@media (max-width: 481px) {
+    .header-hero {
+        flex-direction: column;
+    }
+
+    .form-contant {
+        flex-direction: column-reverse;
+    }
+
+    .form-left button {
+        width: 100%;
+    }
+
+    .form-right {
+        display: grid;
+        place-content: center;
+    }
+
+    .form-right img {
+        max-height: 200px;
+    }
+
+    #baseboard {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+    .header-hero {
+        flex-direction: column;
+    }
+
+    .form-contant {
+        flex-direction: column-reverse;
+    }
+
+    .form-left button {
+        width: 100%;
+    }
+}
