@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: "Montserrat", sans-serif;
 }
 
 .logo {
@@ -18,25 +16,10 @@
     font-weight: 700;
 }
 
-#hero,
-#catalog,
-#contact,
-#address,
-#baseboard {
-    margin-top: 4rem;
-}
-
-.btn:hover {
+button[type="submit"]:hover {
     color: #fff;
     background-color: #ea1d2c;
 }
-
-/* header */
-
-/* .navbar-brand img {
-    height: 40px;
-    object-fit: cover;
-} */
 
 /* address */
 
@@ -117,5 +100,4 @@ article > .container {
     .address-content {
         flex-direction: column-reverse;
     }
-    
 }
