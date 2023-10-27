@@ -1,155 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --logo-color: #F20505;
+  --text-color: #F2F2F2 ;
+  --background-color: #F2A2A9;
+  --btn-hover: #F20530;
+}
+
 .logo {
   width: 100px;
   height: 50px;
 }
 
-#sushi:checked ~ .options > label[for="sushi"] {
-    padding: 2px;
-    color: var(--logo-color);
-  }
-  
-  #sushi:checked ~ .cards .pizzas {
-    display: none;
-  }
-  
-  #sushi:checked ~ .cards .lanches {
-    display: none;
-  }
-  
-  #sushi:checked ~ .cards .fit {
-    display: none;
-  }
-  
-  #sushi:checked ~ .cards .massas {
-    display: none;
-  }
-  
-  
-  #pizzas:checked ~ .options > label[for="pizzas"] {
-    color: var(--logo-color);
-    padding: 2px;
-  }
-  
-  #pizzas:checked ~ .cards .sushi {
-    display: none;
-  }
-  
-  #pizzas:checked ~ .cards .lanches {
-    display: none;
-  }
-  
-  #pizzas:checked ~ .cards .fit {
-    display: none;
-  }
-  
-  #pizzas:checked ~ .cards .massas {
-    display: none;
-  }
-  
-  #sushi:checked ~ .cards .pizzas {
-    display: none;
-  }
-  
-  #sushi:checked ~ .cards .lanches {
-    display: none;
-  }
-  
-  #lanches:checked ~ .options > label[for="lanches"] {
-    color: var(--logo-color);
-    padding: 2px;
-  }
-  
-  #lanches:checked ~ .cards .pizzas {
-    display: none;
-  }
-  
-  #lanches:checked ~ .cards .sushi {
-    display: none;
-  }
-  
-  #lanches:checked ~ .cards .fit {
-    display: none;
-  }
-  
-  #lanches:checked ~ .cards .massas {
-    display: none;
-  }
-  
-  
-  #fit:checked ~ .options > label[for="fit"] {
-    color: var(--logo-color);
-    padding: 2px;
-  }
-  
-  #fit:checked ~ .cards .pizzas {
-    display: none;
-  }
-  
-  #fit:checked ~ .cards .sushi {
-    display: none;
-  }
-  
-  #fit:checked ~ .cards .lanches {
-    display: none;
-  }
-  
-  #fit:checked ~ .cards .massas {
-    display: none;
-  }
-  
-  #massas:checked ~ .options > label[for="massas"] {
-    color: var(--logo-color);
-    padding: 2px;
-  }
-  
-  #massas:checked ~ .cards .pizzas {
-    display: none;
-  }
-  
-  #massas:checked ~ .cards .sushi {
-    display: none;
-  }
-  
-  #massas:checked ~ .cards .lanches {
-    display: none;
-  }
-  
-  #massas:checked ~ .cards .fit {
-    display: none;
-  }
+body {
+  background-color: var(--background-color);
+}
 
+.title {
+  text-align: center;
+  color: #ea1d2c;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#main{
+  margin-top: 4rem;
+}
+
+/* --- catalogo --- */
+
+.catalogo{
+  background-color: var(--text-color);
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 10px;
+  margin-top: 2rem;
+}
+
+.options label:hover{
+  color: var(--logo-color);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  flex-basis: calc(25% - 2rem); 
+  margin-bottom: 2rem; 
+}
+
+.card-large{
+  background-color: var(--text-color);
+  padding: 2rem;
+}
+#sushi:checked ~ .options > label[for="sushi"] {
+  padding: 2px;
+  color: var(--logo-color);
+}
+
+#sushi:checked ~ .cards .pizzas {
+  display: none;
+}
+
+#sushi:checked ~ .cards .lanches {
+  display: none;
+}
+
+#sushi:checked ~ .cards .fit {
+  display: none;
+}
+
+#sushi:checked ~ .cards .massas {
+  display: none;
+}
+
+
+#pizzas:checked ~ .options > label[for="pizzas"] {
+  color: var(--logo-color);
+  padding: 2px;
+}
+
+#pizzas:checked ~ .cards .sushi {
+  display: none;
+}
+
+#pizzas:checked ~ .cards .lanches {
+  display: none;
+}
+
+#pizzas:checked ~ .cards .fit {
+  display: none;
+}
+
+#pizzas:checked ~ .cards .massas {
+  display: none;
+}
+
+#sushi:checked ~ .cards .pizzas {
+  display: none;
+}
+
+#sushi:checked ~ .cards .lanches {
+  display: none;
+}
+
+#lanches:checked ~ .options > label[for="lanches"] {
+  color: var(--logo-color);
+  padding: 2px;
+}
+
+#lanches:checked ~ .cards .pizzas {
+  display: none;
+}
+
+#lanches:checked ~ .cards .sushi {
+  display: none;
+}
+
+#lanches:checked ~ .cards .fit {
+  display: none;
+}
+
+#lanches:checked ~ .cards .massas {
+  display: none;
+}
+
+
+#fit:checked ~ .options > label[for="fit"] {
+  color: var(--logo-color);
+  padding: 2px;
+}
+
+#fit:checked ~ .cards .pizzas {
+  display: none;
+}
+
+#fit:checked ~ .cards .sushi {
+  display: none;
+}
+
+#fit:checked ~ .cards .lanches {
+  display: none;
+}
+
+#fit:checked ~ .cards .massas {
+  display: none;
+}
+
+#massas:checked ~ .options > label[for="massas"] {
+  color: var(--logo-color);
+  padding: 2px;
+}
+
+#massas:checked ~ .cards .pizzas {
+  display: none;
+}
+
+#massas:checked ~ .cards .sushi {
+  display: none;
+}
+
+#massas:checked ~ .cards .lanches {
+  display: none;
+}
+
+#massas:checked ~ .cards .fit {
+  display: none;
+}
+
+/* --- Restaurantes --- */
+
+.stars {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  color: #9a9898;
+}
+
+.checked{
+  color:var(--logo-color);
+}
+
+.restaurantes{
+  background-color: var(--text-color);
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.restaurantes h2{
+  padding: 1rem; 
+}
+
+@media (max-width: 1046px) {
+  .card {
+    flex-basis: calc(50% - 2rem); 
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%; 
+  }
+}
+
+@media (max-width: 481px) {
   #baseboard {
-    width: 100%;
-    height: 100px;
-    margin-top: 4rem;
-    background-color: #ea1d2c;
-  
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    color: #fff;
-  
-    position: static;
-    bottom: 0;
+      font-size: 0.8rem;
   }
-  
-  #baseboard a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  #baseboard a:hover {
-    text-decoration: underline;
-    color: #000;
-  }
-  
-  @media (max-width: 481px) {
-    #baseboard {
-        font-size: 0.8rem;
-    }
-  }
+}
+
+#baseboard {
+  width: 100%;
+  height: 100px;
+  margin-top: 4rem;
+  background-color: #ea1d2c;
+
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+
+  position: static;
+  bottom: 0;
+}
+
+#baseboard a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#baseboard a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
