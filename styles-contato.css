@@ -90,7 +90,7 @@ textarea:valid {
 
     color: #fff;
 
-    position: absolute;
+    position: static;
     bottom: 0;
 }
 
@@ -102,6 +102,10 @@ textarea:valid {
 #baseboard a:hover {
     text-decoration: underline;
     color: #000;
+}
+
+section > .container {
+    margin-top: 10rem;
 }
 
 /* ------- media queries --------- */
