@@ -1,3 +1,8 @@
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
 #sushi:checked ~ .options > label[for="sushi"] {
     padding: 2px;
     color: var(--logo-color);
