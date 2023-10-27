@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    text-align: center;
+    color: #ea1d2c;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#hero,
+#catalog,
+#contact,
+#address,
+#baseboard {
+    margin-top: 4rem;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #ea1d2c;
+}
+
+/* header */
+
+.navbar-brand img {
+    height: 40px;
+    object-fit: cover;
+}
+
+/* address */
+
+.address-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.address-img img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.address-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.address-input {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer */
+
+#baseboard {
+    width: 100%;
+    height: 100px;
+    background-color: #ea1d2c;
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+
+    position: absolute;
+    bottom: 0;
+}
+
+#baseboard a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#baseboard a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* ------- media queries --------- */
+
+@media (max-width: 481px) {
+    .address-content {
+        flex-direction: column-reverse;
+    }
+
+    .address-img img {
+        max-height: 180px;
+    }
+
+    #baseboard {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+    .address-content {
+        flex-direction: column-reverse;
+    }
+}
