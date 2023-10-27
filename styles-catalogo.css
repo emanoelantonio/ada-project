@@ -117,3 +117,39 @@
   #massas:checked ~ .cards .fit {
     display: none;
   }
+
+  #baseboard {
+    width: 100%;
+    height: 100px;
+    margin-top: 4rem;
+    background-color: #ea1d2c;
+  
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    color: #fff;
+  
+    position: static;
+    bottom: 0;
+  }
+  
+  #baseboard a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #baseboard a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  @media (max-width: 481px) {
+    #baseboard {
+        font-size: 0.8rem;
+    }
+  }
