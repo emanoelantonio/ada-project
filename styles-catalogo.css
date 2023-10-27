@@ -1,0 +1,114 @@
+#sushi:checked ~ .options > label[for="sushi"] {
+    padding: 2px;
+    color: var(--logo-color);
+  }
+  
+  #sushi:checked ~ .cards .pizzas {
+    display: none;
+  }
+  
+  #sushi:checked ~ .cards .lanches {
+    display: none;
+  }
+  
+  #sushi:checked ~ .cards .fit {
+    display: none;
+  }
+  
+  #sushi:checked ~ .cards .massas {
+    display: none;
+  }
+  
+  
+  #pizzas:checked ~ .options > label[for="pizzas"] {
+    color: var(--logo-color);
+    padding: 2px;
+  }
+  
+  #pizzas:checked ~ .cards .sushi {
+    display: none;
+  }
+  
+  #pizzas:checked ~ .cards .lanches {
+    display: none;
+  }
+  
+  #pizzas:checked ~ .cards .fit {
+    display: none;
+  }
+  
+  #pizzas:checked ~ .cards .massas {
+    display: none;
+  }
+  
+  #sushi:checked ~ .cards .pizzas {
+    display: none;
+  }
+  
+  #sushi:checked ~ .cards .lanches {
+    display: none;
+  }
+  
+  #lanches:checked ~ .options > label[for="lanches"] {
+    color: var(--logo-color);
+    padding: 2px;
+  }
+  
+  #lanches:checked ~ .cards .pizzas {
+    display: none;
+  }
+  
+  #lanches:checked ~ .cards .sushi {
+    display: none;
+  }
+  
+  #lanches:checked ~ .cards .fit {
+    display: none;
+  }
+  
+  #lanches:checked ~ .cards .massas {
+    display: none;
+  }
+  
+  
+  #fit:checked ~ .options > label[for="fit"] {
+    color: var(--logo-color);
+    padding: 2px;
+  }
+  
+  #fit:checked ~ .cards .pizzas {
+    display: none;
+  }
+  
+  #fit:checked ~ .cards .sushi {
+    display: none;
+  }
+  
+  #fit:checked ~ .cards .lanches {
+    display: none;
+  }
+  
+  #fit:checked ~ .cards .massas {
+    display: none;
+  }
+  
+  #massas:checked ~ .options > label[for="massas"] {
+    color: var(--logo-color);
+    padding: 2px;
+  }
+  
+  #massas:checked ~ .cards .pizzas {
+    display: none;
+  }
+  
+  #massas:checked ~ .cards .sushi {
+    display: none;
+  }
+  
+  #massas:checked ~ .cards .lanches {
+    display: none;
+  }
+  
+  #massas:checked ~ .cards .fit {
+    display: none;
+  }
