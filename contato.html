@@ -86,90 +86,86 @@
             </nav>
         </header>
 
-        <section id="contact">
-            <!-- Contact -->
-            <div class="container">
-                <h3 class="title">Contato</h3>
-
-                <p>
-                    Estamos aqui para você a qualquer hora! Sinta-se à vontade
-                    para nos enviar uma mensagem a qualquer momento, e nossa
-                    equipe estará pronta para responder prontamente. Sua
-                    satisfação é nossa prioridade.
-                </p>
-                <form class="form-contant">
-                    <!-- form-left -->
-                    <div class="form-left">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                name="name"
-                                placeholder="Insira seu nome completo"
-                                required
-                            />
-                        </div>
-
-                        <div class="form-group">
-                            <label for="generer">Genero</label>
-                            <select class="custom-select" required>
-                                <option value="">Selecionar</option>
-                                <option value="F">Feminino</option>
-                                <option value="M">Masculino</option>
-                            </select>
-                            <div class="invalid-feedback">
-                                Exemplo de feedback invalido para o select
+        <main class="container py-4">
+            <section id="contact" class="p-5 mb-4 bg-body-tertiary rounded-3 mt-4">
+                <!-- Contact -->
+                <div class="container">
+                    <h3 class="title">Contato</h3>
+                    <p>
+                        Estamos aqui para você a qualquer hora! Sinta-se à vontade
+                        para nos enviar uma mensagem a qualquer momento, e nossa
+                        equipe estará pronta para responder prontamente. Sua
+                        satisfação é nossa prioridade.
+                    </p>
+                    <form class="form-contant">
+                        <!-- form-left -->
+                        <div class="form-left">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="name"
+                                    placeholder="Insira seu nome completo"
+                                    required
+                                />
                             </div>
+                            <div class="form-group">
+                                <label for="generer">Genero</label>
+                                <select class="custom-select" required>
+                                    <option value="">Selecionar</option>
+                                    <option value="F">Feminino</option>
+                                    <option value="M">Masculino</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Exemplo de feedback invalido para o select
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Endereço de email</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    name="email"
+                                    placeholder="Insira seu e-mail."
+                                    required
+                                />
+                                <small class="form-text text-muted"
+                                    >Nunca vamos compartilhar seu email com
+                                    ninguém.</small
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Telefone</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="telephone"
+                                    placeholder="Insira seu número de telefone."
+                                    required
+                                />
+                                <small id="emailHelp" class="form-text text-muted"
+                                    >Nunca vamos compartilhar seu telefone com
+                                    ninguém.</small
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    placeholder="Insira aqui a sua mensagem..."
+                                    required
+                                ></textarea>
+                                <small id="emailHelp" class="form-text text-muted"
+                                    >Deixe sua mensagem mensagem</small
+                                >
+                            </div>
+                            <button type="submit" class="btn btn-secondary">
+                                Enviar
+                            </button>
                         </div>
-
-                        <div class="form-group">
-                            <label for="email">Endereço de email</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                name="email"
-                                placeholder="Insira seu e-mail."
-                                required
-                            />
-                            <small class="form-text text-muted"
-                                >Nunca vamos compartilhar seu email com
-                                ninguém.</small
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telephone">Telefone</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                name="telephone"
-                                placeholder="Insira seu número de telefone."
-                                required
-                            />
-                            <small id="emailHelp" class="form-text text-muted"
-                                >Nunca vamos compartilhar seu telefone com
-                                ninguém.</small
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea
-                                class="form-control"
-                                name="message"
-                                placeholder="Insira aqui a sua mensagem..."
-                                required
-                            ></textarea>
-                            <small id="emailHelp" class="form-text text-muted"
-                                >Deixe sua mensagem mensagem</small
-                            >
-                        </div>
-
-                        <button type="submit" class="btn btn-secondary">
-                            Enviar
-                        </button>
-                    </div>
+        
 
                     <!-- form-right -->
                     <div class="form-right">
@@ -181,6 +177,7 @@
                 </form>
             </div>
         </section>
+    </main>
 
         <footer id="baseboard">
             <div class="container">
